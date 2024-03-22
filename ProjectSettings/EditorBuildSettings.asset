@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: 9b1065752a7dc45438ec1138d8a46f41
+  - enabled: 0
+    path: Assets/Scenes/main2.unity
+    guid: da712e4450ea50a43bc2e751ff0f34b0
+  - enabled: 0
+    path: Assets/Scenes/Inside_store.unity
+    guid: ceb10b9f0747f634ea40de8d8d1974c4
+  - enabled: 1
+    path: Assets/Scenes/Stage1/Stage1_CutScene1.unity
+    guid: aa2fdf2fbc9428e42b215b43624a5871
+  - enabled: 1
+    path: Assets/Scenes/Stage1/202.unity
+    guid: 609f89e7f17d69348bc9868a8fb95679
+  - enabled: 1
+    path: Assets/Scenes/Map.unity
+    guid: 1fff85d5d69a00e4b9b44872e710493f
+  - enabled: 1
+    path: Assets/Scenes/Stage1/201.unity
+    guid: faa2db8dd100e5b40b0aef4b94f09a34
+  - enabled: 1
+    path: Assets/Scenes/Stage1/205.unity
+    guid: aae6280c0f552ee4b8a27a8e99277b3e
+  - enabled: 1
+    path: Assets/Scenes/1stnight.unity
+    guid: 43fb2b6d879008046bf8af1d6b8f8872
+  - enabled: 1
+    path: Assets/Scenes/2ndnight.unity
+    guid: 9c495142236fb714697bca9edad304ee
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 94662839d85637840be5974f1ddf2aeb, type: 2}
