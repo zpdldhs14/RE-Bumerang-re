@@ -422,7 +422,7 @@ MonoBehaviour:
   intensity: 0
   duration: 0.3
   Intensity: 0
-  sceneName: Stage1_CutScene1
+  sceneName: CutScene
 --- !u!1 &1710755184
 GameObject:
   m_ObjectHideFlags: 0
