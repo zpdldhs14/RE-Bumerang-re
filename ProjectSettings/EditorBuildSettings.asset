@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Stage1/202.unity
     guid: 609f89e7f17d69348bc9868a8fb95679
   - enabled: 1
-    path: Assets/Scenes/Map.unity
+    path: Assets/Scenes/Map 2F.unity
     guid: 1fff85d5d69a00e4b9b44872e710493f
   - enabled: 1
     path: Assets/Scenes/Stage1/201.unity
@@ -41,5 +41,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/2nd_night.unity
     guid: 588484f773dce734d8c51e2c77ab5063
+  - enabled: 1
+    path: Assets/Scenes/Map 1F.unity
+    guid: 5577c6515606d984c97d7a94ac3fda4d
+  - enabled: 1
+    path: Assets/Scenes/Map B1F.unity
+    guid: 636c646683e2bf249be77c0dae8292b3
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 94662839d85637840be5974f1ddf2aeb, type: 2}
