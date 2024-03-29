@@ -47,5 +47,35 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Map B1F.unity
     guid: 636c646683e2bf249be77c0dae8292b3
+  - enabled: 1
+    path: Assets/Scenes/CutScene.unity
+    guid: 64100d48b5763a04b96ed746b0c43298
+  - enabled: 1
+    path: Assets/Scenes/Stage2/Security_Office.unity
+    guid: 6e5ce627158536c42a5a529ebc5a4368
+  - enabled: 1
+    path: Assets/Scenes/Stage2/Raf's room.unity
+    guid: 7fd8da2398bb7624b8d5ba5e60c5737b
+  - enabled: 1
+    path: Assets/Scenes/Stage2/Laste's room.unity
+    guid: d71b55ad911143a449c544d30dd775ab
+  - enabled: 1
+    path: Assets/Scenes/Stage3/lab.unity
+    guid: d624774c6fe1d9444837887e82b32795
+  - enabled: 1
+    path: Assets/Scenes/Stage3/restaurant.unity
+    guid: 14957705f1f116e458470402bb078db0
+  - enabled: 1
+    path: Assets/Scenes/Stage1/Storage.unity
+    guid: a8726a31d746cf047937aafc7f1d1de6
+  - enabled: 1
+    path: Assets/Scenes/Stage3/Toilet.unity
+    guid: 9784f87edd53ae74488894857039be60
+  - enabled: 1
+    path: Assets/Scenes/3rdnight.unity
+    guid: da9bdc5f869b2c246ba9d7210a449d88
+  - enabled: 1
+    path: Assets/Scenes/CutScene_3rd.unity
+    guid: 81852226871680542ab1fcdb8d7dc579
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 94662839d85637840be5974f1ddf2aeb, type: 2}

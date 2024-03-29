@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class AnimationEnd : MonoBehaviour
 {
     public static int isVisited = 0;
+    public alphazero1 alpha;
 
     void Start()
     {
@@ -23,10 +24,22 @@ public class AnimationEnd : MonoBehaviour
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene(2);
         }
-        else
+        else if( isVisited == 3)
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene(7);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(3);
         }
-        
+        else if( isVisited == 4)
+        {
+            StartCoroutine(NextLevel());
+        }
     }
+
+     IEnumerator NextLevel()
+    {
+        alpha.Fadeone();
+        yield return new WaitForSeconds(4.0f);
+        SceneManager.LoadScene(20);
+    }
+        
 }
+
