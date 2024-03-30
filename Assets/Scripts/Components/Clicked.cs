@@ -4,6 +4,8 @@ using System.Collections.Generic;
 
 public class ImageDisplayScript : MonoBehaviour
 {
+    public static ImageDisplayScript Instance;
+
     public List<Sprite> touchedObjectsImages; // 닿았던 오브젝트의 이미지 목록
     public Image displayImage; // 이미지를 표시할 UI Image 컴포넌트
     public GameObject subMenu;
@@ -11,6 +13,19 @@ public class ImageDisplayScript : MonoBehaviour
 
     private int currentImageIndex; // 현재 표시되는 이미지 인덱스
     private bool isSubMenuActive = false;
+
+    void Awake()
+    {
+        if(Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     void Start()
     {
@@ -76,6 +91,12 @@ public class ImageDisplayScript : MonoBehaviour
         {
             touchedObjectsImages.Add(buttonImage.sprite);
         }
+        // 버튼을 클릭할 때마다 currentImageIndex를 증가시킵니다.
+    // currentImageIndex가 touchedObjectsImages의 크기와 같거나 크면 0으로 설정하여 처음부터 다시 시작합니다.
+        currentImageIndex = (currentImageIndex + 1) % touchedObjectsImages.Count;
+
+    // currentImageIndex를 사용하여 touchedObjectsImages에서 다음 이미지를 가져와 displayImage.sprite에 설정합니다.
+        displayImage.sprite = touchedObjectsImages[currentImageIndex];
     }
 
     void OnTriggerEnter(Collider other)

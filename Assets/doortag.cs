@@ -8,6 +8,7 @@ public class doortag : MonoBehaviour
 {
    public GameObject black;
    public float duration = 2f;
+   public string sceneName;
 
    void OnTriggerEnter2D(Collider2D other)
    {
@@ -21,6 +22,6 @@ public class doortag : MonoBehaviour
     IEnumerator ChangeSceneWithDelay()
     {
         yield return new WaitForSeconds(duration);
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(sceneName);
     }
 }

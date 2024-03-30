@@ -35,13 +35,13 @@ public class ImageChange : MonoBehaviour
         }
     }
 
-    void ActivateDoor()
+    public void ActivateDoor()
     {
         currentdoor.GetComponent<SpriteRenderer>().enabled = false;
         opendoor.GetComponent<SpriteRenderer>().enabled = true;
     }
 
-    void DeactivateDoor()
+    public void DeactivateDoor()
     {
         opendoor.GetComponent<SpriteRenderer>().enabled = false;
         currentdoor.GetComponent<SpriteRenderer>().enabled = true;
