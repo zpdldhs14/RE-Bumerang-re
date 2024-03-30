@@ -11,7 +11,8 @@ public class Scriptout : MonoBehaviour
     public TMP_Text yourText; // 텍스트에 대한 참조
     public float delay = 5.0f; // 대기 시간
     public GameObject black; // 검은 화면
-    private string m_text = "지금은 방으로 돌아가야겠다..";
+    public string SceneName;
+    [SerializeField]private string m_text;
 
     void Start()
     {
@@ -37,7 +38,7 @@ public class Scriptout : MonoBehaviour
         black.SetActive(true);
         UIManager.Instance.FadeAlphaOne(black, delay);
         yield return new WaitForSeconds(5.0f);
-        SceneManager.LoadScene(9);
+        SceneManager.LoadScene(SceneName);
     }
 
     IEnumerator HideText()

@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Main.unity
+    path: Assets/Scenes/Main/Main.unity
     guid: 9b1065752a7dc45438ec1138d8a46f41
   - enabled: 0
     path: Assets/Scenes/main2.unity
@@ -21,61 +21,76 @@ EditorBuildSettings:
     path: Assets/Scenes/Stage1/202.unity
     guid: 609f89e7f17d69348bc9868a8fb95679
   - enabled: 1
-    path: Assets/Scenes/Map 2F.unity
+    path: Assets/Scenes/Map/Map 2F.unity
     guid: 1fff85d5d69a00e4b9b44872e710493f
   - enabled: 1
     path: Assets/Scenes/Stage1/201.unity
     guid: faa2db8dd100e5b40b0aef4b94f09a34
   - enabled: 1
-    path: Assets/Scenes/Stage1/205.unity
+    path: Assets/Scenes/Stage2/205.unity
     guid: aae6280c0f552ee4b8a27a8e99277b3e
   - enabled: 1
-    path: Assets/Scenes/1stnight.unity
+    path: Assets/Scenes/Stage1/1stnight.unity
     guid: 43fb2b6d879008046bf8af1d6b8f8872
   - enabled: 1
-    path: Assets/Scenes/2ndnight.unity
+    path: Assets/Scenes/Stage2/2ndnight.unity
     guid: 9c495142236fb714697bca9edad304ee
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Shower.unity
     guid: 4e75a1f3ab6b1ac4a8363541e7520f5e
   - enabled: 1
-    path: Assets/Scenes/2nd_night.unity
+    path: Assets/Scenes/Stage2/2nd_night.unity
     guid: 588484f773dce734d8c51e2c77ab5063
   - enabled: 1
-    path: Assets/Scenes/Map 1F.unity
+    path: Assets/Scenes/Map/Map 1F.unity
     guid: 5577c6515606d984c97d7a94ac3fda4d
   - enabled: 1
-    path: Assets/Scenes/Map B1F.unity
+    path: Assets/Scenes/Map/Map B1F.unity
     guid: 636c646683e2bf249be77c0dae8292b3
   - enabled: 1
-    path: Assets/Scenes/CutScene.unity
+    path: Assets/Scenes/Stage1/CutScene.unity
     guid: 64100d48b5763a04b96ed746b0c43298
   - enabled: 1
-    path: Assets/Scenes/Stage2/Security_Office.unity
+    path: Assets/Scenes/Stage4/Security_Office.unity
     guid: 6e5ce627158536c42a5a529ebc5a4368
   - enabled: 1
-    path: Assets/Scenes/Stage2/Raf's room.unity
+    path: Assets/Scenes/Stage5/Raf's room.unity
     guid: 7fd8da2398bb7624b8d5ba5e60c5737b
   - enabled: 1
-    path: Assets/Scenes/Stage2/Laste's room.unity
+    path: Assets/Scenes/Stage5/Laste's room.unity
     guid: d71b55ad911143a449c544d30dd775ab
   - enabled: 1
-    path: Assets/Scenes/Stage3/lab.unity
+    path: Assets/Scenes/Stage6/lab.unity
     guid: d624774c6fe1d9444837887e82b32795
   - enabled: 1
-    path: Assets/Scenes/Stage3/restaurant.unity
+    path: Assets/Scenes/Stage6/restaurant.unity
     guid: 14957705f1f116e458470402bb078db0
   - enabled: 1
     path: Assets/Scenes/Stage1/Storage.unity
     guid: a8726a31d746cf047937aafc7f1d1de6
   - enabled: 1
-    path: Assets/Scenes/Stage3/Toilet.unity
+    path: Assets/Scenes/Stage4/Toilet.unity
     guid: 9784f87edd53ae74488894857039be60
   - enabled: 1
-    path: Assets/Scenes/3rdnight.unity
+    path: Assets/Scenes/Stage3/3rdnight.unity
     guid: da9bdc5f869b2c246ba9d7210a449d88
   - enabled: 1
-    path: Assets/Scenes/CutScene_3rd.unity
+    path: Assets/Scenes/Stage3/CutScene_3rd.unity
     guid: 81852226871680542ab1fcdb8d7dc579
+  - enabled: 1
+    path: Assets/Scenes/Stage5/5thnight.unity
+    guid: 186da3871564edf42a6cc089bdc87d7f
+  - enabled: 1
+    path: Assets/Scenes/Stage4/4thnight.unity
+    guid: c7fb169e3d7d97e4fbbb034576726800
+  - enabled: 1
+    path: Assets/Scenes/Stage1/202-1.unity
+    guid: 93ec509e14ccb2c42b964e3993de153c
+  - enabled: 1
+    path: Assets/Scenes/Stage7/laboratory.unity
+    guid: 0a637db429d8ceb45a6d57bf5e0c021a
+  - enabled: 1
+    path: Assets/Scenes/Stage3/ShowerRoom.unity
+    guid: 09310d07eccdee344908c3affd0ffe01
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 94662839d85637840be5974f1ddf2aeb, type: 2}

@@ -26,6 +26,6 @@ public class CutScenetyping : typingeffect
         yield return new WaitForSeconds(3.0f);
         alpha.Fadeone();
         yield return new WaitForSeconds(4.0f);
-        SceneManager.LoadScene(21);
+        SceneManager.LoadScene(20);
     }
 }

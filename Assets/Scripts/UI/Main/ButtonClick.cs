@@ -23,13 +23,13 @@ public class ButtonClick : MonoBehaviour
     switch (ButtonName)
     {
         case "1F":
-            SceneManager.LoadScene(10);
+            SceneManager.LoadScene(9);
             break;
         case "2F":
             SceneManager.LoadScene(3);
             break;
         case "B1F":
-            SceneManager.LoadScene(11);
+            SceneManager.LoadScene(10);
             break;
         default:
             break;

@@ -16,30 +16,38 @@ public class AnimationEnd : MonoBehaviour
     void LoadScene()
     {
         isVisited++;
-        if(isVisited == 1)
+        switch(isVisited)
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene(2);
-        }
-        else if(isVisited == 2)
-        {
-            UnityEngine.SceneManagement.SceneManager.LoadScene(2);
-        }
-        else if( isVisited == 3)
-        {
-            UnityEngine.SceneManagement.SceneManager.LoadScene(3);
-        }
-        else if( isVisited == 4)
-        {
-            StartCoroutine(NextLevel());
+            case 1:
+                SceneManager.LoadScene(2);
+                break;
+            case 2:
+                SceneManager.LoadScene(2);
+                break;
+            case 3:
+                SceneManager.LoadScene(7);
+                break;
+            case 4:
+                SceneManager.LoadScene(2);
+                break;
+            case 5:
+                SceneManager.LoadScene(19);
+                break;
+            case 6:
+                SceneManager.LoadScene(2);
+                break;
+            case 7:
+                SceneManager.LoadScene(22);
+                break;
+            case 8:
+            case 9:
+            case 10:
+            case 11:
+            case 12: 
+                SceneManager.LoadScene(2);
+                break;
+                
         }
     }
-
-     IEnumerator NextLevel()
-    {
-        alpha.Fadeone();
-        yield return new WaitForSeconds(4.0f);
-        SceneManager.LoadScene(20);
-    }
-        
 }
 
