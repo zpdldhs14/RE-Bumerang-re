@@ -45,14 +45,6 @@ public class StorageScript : MonoBehaviour
         yield return new WaitForSeconds(duration);
         SceneManager.LoadScene(SceneName);
     }
-
-    /*private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject == soapObject)
-        {
-            soapTouched = true;
-        }
-    }*/
 }
 
 

@@ -55,7 +55,7 @@ public class ImageDisplayScript : MonoBehaviour
             }
         }
 
-        // "GameObject" 태그를 가진 오브젝트가 활성화되었을 때
+        // "GameObject", "read", 또는 "message" 태그를 가진 오브젝트가 활성화되었을 때
         foreach (GameObject obj in GameObject.FindGameObjectsWithTag("GameObject"))
         {
             if (obj.activeSelf)
@@ -69,6 +69,35 @@ public class ImageDisplayScript : MonoBehaviour
                 }
             }
         }
+
+        foreach (GameObject obj in GameObject.FindGameObjectsWithTag("read"))
+        {
+            if (obj.activeSelf)
+            {
+                Image objectImage = obj.GetComponent<Image>();
+                if (objectImage != null && !touchedObjectsImages.Contains(objectImage.sprite))
+                {
+                    // 닿았던 오브젝트의 이미지 목록에 추가
+                    touchedObjectsImages.Add(objectImage.sprite);
+                    ShowNextImage();
+                }
+            }
+        }
+
+        foreach (GameObject obj in GameObject.FindGameObjectsWithTag("message"))
+        {
+            if (obj.activeSelf)
+            {
+                Image objectImage = obj.GetComponent<Image>();
+                if (objectImage != null && !touchedObjectsImages.Contains(objectImage.sprite))
+                {
+                    // 닿았던 오브젝트의 이미지 목록에 추가
+                    touchedObjectsImages.Add(objectImage.sprite);
+                    ShowNextImage();
+                }
+            }
+        }
+       
     }
 
     public void ShowNextImage()
@@ -91,7 +120,7 @@ public class ImageDisplayScript : MonoBehaviour
         {
             touchedObjectsImages.Add(buttonImage.sprite);
         }
-        // 버튼을 클릭할 때마다 currentImageIndex를 증가시킵니다.
+    // 버튼을 클릭할 때마다 currentImageIndex를 증가시킵니다.
     // currentImageIndex가 touchedObjectsImages의 크기와 같거나 크면 0으로 설정하여 처음부터 다시 시작합니다.
         currentImageIndex = (currentImageIndex + 1) % touchedObjectsImages.Count;
 

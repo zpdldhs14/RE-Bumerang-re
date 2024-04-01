@@ -418,7 +418,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 1710755186}
+  tmpText: {fileID: 1710755186}
   alpha: {fileID: 2004339474}
+  sceneName: CutScene_3rd
 --- !u!1 &1710755184
 GameObject:
   m_ObjectHideFlags: 0

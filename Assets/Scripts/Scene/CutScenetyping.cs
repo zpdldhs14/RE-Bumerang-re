@@ -9,6 +9,7 @@ public class CutScenetyping : typingeffect
     public TMP_Text tmpText;
     public override string m_text { get; set; }
     public alphazero1 alpha;
+    public string sceneName;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +27,6 @@ public class CutScenetyping : typingeffect
         yield return new WaitForSeconds(3.0f);
         alpha.Fadeone();
         yield return new WaitForSeconds(4.0f);
-        SceneManager.LoadScene(20);
+        SceneManager.LoadScene(sceneName);
     }
 }

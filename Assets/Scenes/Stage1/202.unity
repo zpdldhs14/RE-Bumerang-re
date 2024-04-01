@@ -1810,10 +1810,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cbf196cfa531e746b40ad5ecf371c2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemID: 1
-  requiredItemID: -2
-  goToPoint: {fileID: 653745720}
-  objectsToRemove: []
 --- !u!61 &809258743
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3156,10 +3152,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cbf196cfa531e746b40ad5ecf371c2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemID: 0
-  requiredItemID: -1
-  goToPoint: {fileID: 1608625738}
-  objectsToRemove: []
 --- !u!61 &1134895486
 BoxCollider2D:
   m_ObjectHideFlags: 0

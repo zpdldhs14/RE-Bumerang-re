@@ -6,6 +6,7 @@ using System;
 
 public class SenceChange : MonoBehaviour
 {
+    public alphazero1 alpha;
 
     public string sceneName;
 
@@ -16,9 +17,9 @@ public class SenceChange : MonoBehaviour
 
     IEnumerator Sequnence()
     {
-        UIManager.Instance.FadeAlphaOne(go: this.gameObject, 5.0f);
+        alpha.Fadeone();
         yield return new WaitForSeconds(5.0f);
-        UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene(sceneName);
     }
 }
 

@@ -12,6 +12,7 @@ TagManager:
   - map
   - CD
   - GameObject
+  - Wire
   layers:
   - Default
   - TransparentFX
