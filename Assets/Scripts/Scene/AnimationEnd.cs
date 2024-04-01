@@ -16,6 +16,9 @@ public class AnimationEnd : MonoBehaviour
     void LoadScene()
     {
         isVisited++;
+
+        SaveManager.Instance.SaveGameProgress(isVisited); // 게임 진행도 저장
+        
         switch(isVisited)
         {
             case 1:

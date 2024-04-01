@@ -19,8 +19,15 @@ public class Count : MonoBehaviour
     private int currentNumber2 = 0; // 두 번째 텍스트의 현재 숫자
     private int currentNumber3 = 0; // 세 번째 텍스트의 현재 숫자
 
+    private string puzzleKey = "921"; // 퍼즐의 고유한 키
+
+    private Dictionary<string, bool> puzzleCompletionStatus; // 퍼즐 완료 상태 딕셔너리
+
     void Start()
     {
+        // 퍼즐 완료 상태 딕셔너리 초기화
+        puzzleCompletionStatus = new Dictionary<string, bool>();
+
         // 각 버튼의 클릭 이벤트에 숫자 변경 메서드를 추가합니다.
         button1.onClick.AddListener(() => ChangeNumber(text1, ref currentNumber1));
         button2.onClick.AddListener(() => ChangeNumber(text2, ref currentNumber2));
@@ -50,6 +57,19 @@ public class Count : MonoBehaviour
         }
     }
 
+        void SetPuzzleCompletionStatus(string key, bool isCompleted)
+    {
+        // 퍼즐 완료 상태 딕셔너리에 퍼즐의 고유한 키와 완료 여부를 설정합니다.
+        if (!puzzleCompletionStatus.ContainsKey("921"))
+        {
+            puzzleCompletionStatus.Add("921", isCompleted);
+        }
+        else
+        {
+            puzzleCompletionStatus["921"] = isCompleted;
+        }
+    }
+
     IEnumerator DisableButtonsForSeconds(float seconds)
     {
         // 모든 버튼을 비활성화합니다.
@@ -68,4 +88,3 @@ public class Count : MonoBehaviour
         button3.interactable = true;
     }
 }
-
