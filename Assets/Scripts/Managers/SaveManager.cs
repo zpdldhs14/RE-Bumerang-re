@@ -1,4 +1,4 @@
-sing System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
@@ -8,7 +8,12 @@ public class SaveManager : MonoBehaviour
 {
     public GameObject player;
     private PlayerData playerData;
+    private Rigidbody playerRigidbody;
+    private Transform playerTransform;
+
     private InventoryData inventoryData;
+
+    public static SaveManager Instance { get; private set; }
     private bool cutsceneExecuted;
     private Dictionary<string, bool> puzzleCompletionStatus = new Dictionary<string, bool>();
 
@@ -24,11 +29,24 @@ public class SaveManager : MonoBehaviour
         playerTransform = player.GetComponent<Transform>();
     }
 
-    // 저장하기
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+// 저장하기
 public void SaveGameData()
 {
     // 플레이어 정보 수집
-    playerData = new PlayerData(player.transform, player.GetComponent<Rigidbody>());
+    playerData = new PlayerData(player.transform.position, playerRigidbody.mass);
 
     // 인벤토리 정보 수집
     inventoryData = new InventoryData();
@@ -202,6 +220,12 @@ public class PlayerData
 {
     public Vector3 position; // 플레이어 위치
     public float mass; // 플레이어 질량
+
+    public PlayerData(Vector3 position, float mass)
+    {
+        this.position = position;
+        this.mass = mass;
+    }
 }
 
 // 인벤토리 정보 클래스
