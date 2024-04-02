@@ -9,7 +9,7 @@ public class ImageDisplayScript : MonoBehaviour
     public List<Sprite> touchedObjectsImages; // 닿았던 오브젝트의 이미지 목록
     public Image displayImage; // 이미지를 표시할 UI Image 컴포넌트
     public GameObject subMenu;
-    public GameObject player;
+    //public ClickManager clickManager;
 
     private int currentImageIndex; // 현재 표시되는 이미지 인덱스
     private bool isSubMenuActive = false;
@@ -20,6 +20,7 @@ public class ImageDisplayScript : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            transform.parent = null;
         }
         else
         {
@@ -36,14 +37,14 @@ public class ImageDisplayScript : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(1) && touchedObjectsImages.Count > 0) // 마우스 우클릭
+        if (Input.GetMouseButtonDown(1) && touchedObjectsImages != null && touchedObjectsImages.Count > 0 && touchedObjectsImages[currentImageIndex] != null) // 마우스 우클릭
         {
             if(isSubMenuActive)
             {
                 displayImage.gameObject.SetActive(false);
                 subMenu.SetActive(false);
                 isSubMenuActive = false;
-                player.GetComponent<ClickManager>().enabled = true;
+                //clickManager.enabled = true;
             }
             else
             {
@@ -51,7 +52,7 @@ public class ImageDisplayScript : MonoBehaviour
                 displayImage.gameObject.SetActive(true);
                 subMenu.SetActive(true);
                 isSubMenuActive = true;
-                player.GetComponent<ClickManager>().enabled = false;
+                //clickManager.enabled = false;
             }
         }
 

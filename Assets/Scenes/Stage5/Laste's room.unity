@@ -688,7 +688,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 544157224}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ImageDisplayScript, Assembly-CSharp
         m_MethodName: OnButtonClicked
         m_Mode: 2
@@ -1320,7 +1320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cda7cb2f973e8940a9fccb149d994c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  display: {fileID: 544157224}
+  display: {fileID: 0}
   sprite: {fileID: 21300000, guid: 43c140629fed0034696ad5e65ca6c67c, type: 3}
   ShowFrame: {fileID: 1475645326}
 --- !u!61 &526296797
@@ -1578,7 +1578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00ad6e820ce11144ea73dedde1898b0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  black: {fileID: 0}
+  black: {fileID: 1288313302}
   duration: 2
   sceneName: 5thnight
 --- !u!1 &544157220
@@ -1591,7 +1591,6 @@ GameObject:
   m_Component:
   - component: {fileID: 544157222}
   - component: {fileID: 544157223}
-  - component: {fileID: 544157224}
   m_Layer: 0
   m_Name: Mouse
   m_TagString: Untagged
@@ -1630,22 +1629,6 @@ MonoBehaviour:
   cursorDefault: {fileID: 2800000, guid: cc58c654766f9824284b61bf21cd5409, type: 3}
   cursorStop: {fileID: 2800000, guid: 1f7988d0d1a9fb349aabf51fed9a963a, type: 3}
   cursorRead: {fileID: 2800000, guid: 8e7d66c247db446468ec0ae676a8ff67, type: 3}
---- !u!114 &544157224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 544157220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02401e6a814ee2a4e803935e900e6c1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  touchedObjectsImages: []
-  displayImage: {fileID: 1220986416}
-  subMenu: {fileID: 826246423}
-  player: {fileID: 6995630951213824682}
 --- !u!1 &549450647
 GameObject:
   m_ObjectHideFlags: 0
@@ -2075,7 +2058,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 544157224}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ImageDisplayScript, Assembly-CSharp
         m_MethodName: OnButtonClicked
         m_Mode: 2
@@ -2798,7 +2781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cda7cb2f973e8940a9fccb149d994c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  display: {fileID: 544157224}
+  display: {fileID: 0}
   sprite: {fileID: 21300000, guid: aba65d38d55076845863f2f345983899, type: 3}
   ShowFrame: {fileID: 451306318}
 --- !u!61 &953510291
@@ -5160,7 +5143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cda7cb2f973e8940a9fccb149d994c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  display: {fileID: 544157224}
+  display: {fileID: 0}
   sprite: {fileID: 21300000, guid: 279f8a97b9084c347b763858c54c864b, type: 3}
   ShowFrame: {fileID: 1883534723}
 --- !u!61 &1928059574

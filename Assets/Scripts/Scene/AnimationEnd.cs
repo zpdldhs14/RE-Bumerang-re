@@ -6,6 +6,7 @@ public class AnimationEnd : MonoBehaviour
 {
     public static int isVisited = 0;
     public alphazero1 alpha;
+    //public SaveManager saveManager;
 
     void Start()
     {
@@ -17,9 +18,9 @@ public class AnimationEnd : MonoBehaviour
     {
         isVisited++;
 
-        SaveManager.Instance.SaveGameProgress(isVisited); // 게임 진행도 저장
-        
-        switch(isVisited)
+        //saveManager.SaveGameProgress(isVisited); // 게임 진행도 저장
+
+        switch (isVisited)
         {
             case 1:
                 SceneManager.LoadScene(2);

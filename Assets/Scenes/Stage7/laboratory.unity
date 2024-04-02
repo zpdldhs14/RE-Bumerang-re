@@ -677,7 +677,6 @@ MonoBehaviour:
   touchedObjectsImages: []
   displayImage: {fileID: 2091835030}
   subMenu: {fileID: 981024187}
-  player: {fileID: 6995630951213824682}
 --- !u!1 &593632520
 GameObject:
   m_ObjectHideFlags: 0

@@ -46,7 +46,7 @@ public class Bilicome : MonoBehaviour
 
             yield return null;
         }
-         GlitchWhenNear glitchEffect = GetComponent<GlitchWhenNear>(); // GlitchWhenNear 컴포넌트를 가져옴
+        GlitchWhenNear glitchEffect = GetComponent<GlitchWhenNear>(); // GlitchWhenNear 컴포넌트를 가져옴
         if (glitchEffect != null)
         {
             glitchEffect.Intensity = true; // 글리치 효과를 적용

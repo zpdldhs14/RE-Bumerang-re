@@ -1,93 +1,87 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.EventSystems;
+using TMPro;
 
 public class Puzzle : MonoBehaviour
 {
-    public Button puzzle1;//빨강
-    public Button puzzle2;//파랑
-    public Button puzzle3;//노랑
-    public GameObject background;
+    public Button cutRedButton;
+    public Button cutBlueButton;
+    public Button cutYellowButton;
+    public Button connectRedButton;
+    public Button connectBlueButton;
+    public Button connectYellowButton;
+    public Image backgroundImage;
 
-    public Sprite newSprite1; // 빨강 선이 짤린 이미지
-    public Sprite newSprite2; // 파랑 선이 짤린 이미지
-    public Sprite newSprite3; // 노랑 선이 짤린 이미지
+    public Sprite redLineCut;
+    public Sprite blueLineCut;
+    public Sprite yellowLineCut;
+    public Sprite redAndblueCut;
+    public Sprite redAndYellowCut;
+    public Sprite blueAndYellowCut;
+    public Sprite AllCut;
+    public Sprite AllConnected;
 
-    public Sprite newSprite4; // 빨강과 파랑 선이 짤린 이미지, 노랑 선이 이어진 이미지
-    public Sprite newSprite5; // 빨강과 노랑 선이 짤린 이미지, 파랑 선이 이어진 이미지
-    public Sprite newSprite6; // 파랑과 노랑 선이 짤린 이미지, 빨강 선이 이어진 이미지
 
-    public Sprite cuttingSprite; //다 짤린 이미지
+    public TMP_Text text;
 
-    public Sprite newSprite7; // 빨강, 파랑, 노랑 선이 이어진 이미지
-    public Sprite connectedSprite; // 이어진 이미지
+    private int redLineState = 1; // 0: 끊어짐, 1: 연결됨
+    private int blueLineState = 1;
+    private int yellowLineState = 1;
 
-    private bool isPuzzle1Clicked = false;
-    private bool isPuzzle2Clicked = false;
-    private bool isPuzzle3Clicked = false;
-
-    bool wasPuzzle1ClickedLast = false;
-    bool wasPuzzle2ClickedLast = false;
-    bool wasPuzzle3ClickedLast = false;
-
-    void Start()
+    private void Start()
     {
-        puzzle1.onClick.AddListener(() => { UpdateClickStatus(1); CheckAndChangeBackground(newSprite1); });
-        puzzle2.onClick.AddListener(() => { UpdateClickStatus(2); CheckAndChangeBackground(newSprite2); });
-        puzzle3.onClick.AddListener(() => { UpdateClickStatus(3); CheckAndChangeBackground(newSprite3); });
+        cutRedButton.onClick.AddListener(() => { redLineState = 0; UpdateBackgroundImage(); });
+        cutBlueButton.onClick.AddListener(() => { blueLineState = 0; UpdateBackgroundImage(); });
+        cutYellowButton.onClick.AddListener(() => { yellowLineState = 0; UpdateBackgroundImage(); });
+        connectRedButton.onClick.AddListener(() => { redLineState = 1; UpdateBackgroundImage(); });
+        connectBlueButton.onClick.AddListener(() => { blueLineState = 1; UpdateBackgroundImage(); });
+        connectYellowButton.onClick.AddListener(() => { yellowLineState = 1; UpdateBackgroundImage(); });
     }
 
-    void UpdateClickStatus(int puzzleNumber)
+    private void UpdateBackgroundImage()
     {
-        wasPuzzle1ClickedLast = isPuzzle1Clicked;
-        wasPuzzle2ClickedLast = isPuzzle2Clicked;
-        wasPuzzle3ClickedLast = isPuzzle3Clicked;
-
-        isPuzzle1Clicked = puzzleNumber == 1;
-        isPuzzle2Clicked = puzzleNumber == 2;
-        isPuzzle3Clicked = puzzleNumber == 3;
-    }
-    void Update()
-    {
-        /*if (Input.GetMouseButtonDown(1)) // 우클릭 감지
+        if (redLineState == 0 && blueLineState != 0 && yellowLineState != 0)
         {
-            Image image = background.GetComponent<Image>();
-            image.sprite = connectedSprite;
-        }*/
-    }
-
-    void CheckAndChangeBackground(Sprite sprite)
-    {
-        Image image = background.GetComponent<Image>();
-        if ((wasPuzzle1ClickedLast && isPuzzle2Clicked) || (wasPuzzle2ClickedLast && isPuzzle1Clicked))
-        {
-            image.sprite = newSprite4;
+            // 빨간색 선만 끊어진 경우
+            backgroundImage.sprite = redLineCut;
         }
-        else if ((wasPuzzle1ClickedLast && isPuzzle3Clicked) || (wasPuzzle3ClickedLast && isPuzzle1Clicked))
+        else if (blueLineState == 0 && redLineState != 0 && yellowLineState != 0)
         {
-            image.sprite = newSprite5;
+            // 파란색 선만 끊어진 경우
+            backgroundImage.sprite = blueLineCut;
         }
-        else if ((wasPuzzle2ClickedLast && isPuzzle3Clicked) || (wasPuzzle3ClickedLast && isPuzzle2Clicked))
+        else if (yellowLineState == 0 && redLineState != 0 && blueLineState != 0)
         {
-            image.sprite = newSprite6;
+            // 노란색 선만 끊어진 경우
+            backgroundImage.sprite = yellowLineCut;
+            text.text = "잠금이 해제되었습니다.";
+        }
+        else if (redLineState == 0 && blueLineState == 0 && yellowLineState != 0)
+        {
+            // 빨간색과 파란색 선만 끊어진 경우
+            backgroundImage.sprite = redAndblueCut;
+        }
+        else if (redLineState == 0 && blueLineState != 0 && yellowLineState == 0)
+        {
+            // 빨간색과 노란색 선만 끊어진 경우
+            backgroundImage.sprite = redAndYellowCut;
+        }
+        else if (redLineState != 0 && blueLineState == 0 && yellowLineState == 0)
+        {
+            // 파란색과 노란색 선만 끊어진 경우
+            backgroundImage.sprite = blueAndYellowCut;
+            text.text = "비상 잠금이 해제되었습니다.";
+        }
+        else if (redLineState == 0 && blueLineState == 0 && yellowLineState == 0)
+        {
+            // 모든 선이 끊어진 경우
+            backgroundImage.sprite = AllCut;
         }
         else
         {
-            if(isPuzzle1Clicked)
-            {
-                image.sprite = newSprite1;
-                isPuzzle1Clicked = false;
-            }
-            if(isPuzzle2Clicked)
-            {
-                image.sprite = newSprite2;
-                isPuzzle2Clicked = false;
-            }
-            if(isPuzzle3Clicked)
-            {
-                image.sprite = newSprite3;
-                isPuzzle3Clicked = false;
-            }
+            // 모든 선이 연결된 경우
+            backgroundImage.sprite = AllConnected;
         }
     }
+
 }

@@ -916,6 +916,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   black: {fileID: 1288313302}
   duration: 2
+  sceneName: 
 --- !u!1 &544157220
 GameObject:
   m_ObjectHideFlags: 0
@@ -925,7 +926,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 544157222}
-  - component: {fileID: 544157223}
   - component: {fileID: 544157224}
   m_Layer: 0
   m_Name: Mouse
@@ -949,22 +949,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &544157223
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 544157220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02401e6a814ee2a4e803935e900e6c1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  touchedObjectsImages: []
-  displayImage: {fileID: 634898502}
-  subMenu: {fileID: 1732585742}
-  player: {fileID: 6995630951213824682}
 --- !u!114 &544157224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1840,10 +1824,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cbf196cfa531e746b40ad5ecf371c2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemID: 1
-  requiredItemID: -2
-  goToPoint: {fileID: 653745720}
-  objectsToRemove: []
 --- !u!61 &809258743
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3186,10 +3166,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cbf196cfa531e746b40ad5ecf371c2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemID: 0
-  requiredItemID: -1
-  goToPoint: {fileID: 1608625738}
-  objectsToRemove: []
 --- !u!61 &1134895486
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5583,7 +5559,7 @@ MonoBehaviour:
   targetPosition: {fileID: 462763540}
   moveSpeed: 1
   text: {fileID: 1359200896}
-  SceneName: Stage1_CutScene1
+  SceneName: 
 --- !u!1 &2075030371
 GameObject:
   m_ObjectHideFlags: 0

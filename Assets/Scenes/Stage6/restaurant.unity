@@ -206,7 +206,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 544157224}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ImageDisplayScript, Assembly-CSharp
         m_MethodName: ShowNextImage
         m_Mode: 1
@@ -545,7 +545,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cda7cb2f973e8940a9fccb149d994c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  display: {fileID: 544157224}
+  display: {fileID: 0}
   sprite: {fileID: 21300000, guid: bdffdc9354a012a4d9af9feaf5cd475c, type: 3}
   ShowFrame: {fileID: 919568329}
 --- !u!1 &244587911
@@ -1014,7 +1014,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cda7cb2f973e8940a9fccb149d994c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  display: {fileID: 544157224}
+  display: {fileID: 0}
   sprite: {fileID: 21300000, guid: c4263defd7663cb4aaf9a3d868b3b4ee, type: 3}
   ShowFrame: {fileID: 444028882}
 --- !u!1 &527444826
@@ -1173,7 +1173,6 @@ GameObject:
   m_Component:
   - component: {fileID: 544157222}
   - component: {fileID: 544157223}
-  - component: {fileID: 544157224}
   m_Layer: 0
   m_Name: Mouse
   m_TagString: Untagged
@@ -1212,22 +1211,6 @@ MonoBehaviour:
   cursorDefault: {fileID: 2800000, guid: cc58c654766f9824284b61bf21cd5409, type: 3}
   cursorStop: {fileID: 2800000, guid: 1f7988d0d1a9fb349aabf51fed9a963a, type: 3}
   cursorRead: {fileID: 2800000, guid: 8e7d66c247db446468ec0ae676a8ff67, type: 3}
---- !u!114 &544157224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 544157220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02401e6a814ee2a4e803935e900e6c1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  touchedObjectsImages: []
-  displayImage: {fileID: 1979086080}
-  subMenu: {fileID: 1119756829}
-  player: {fileID: 6995630951213824682}
 --- !u!1 &615801935
 GameObject:
   m_ObjectHideFlags: 0
@@ -2684,7 +2667,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 544157224}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ImageDisplayScript, Assembly-CSharp
         m_MethodName: ShowNextImage
         m_Mode: 1

@@ -116,8 +116,26 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Stage6/16030202.unity
     guid: eca43a3f360c71547abf4997ae8d7805
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Stage6/16030202 1.unity
     guid: c0452837458576547992f07025ac8909
+  - enabled: 1
+    path: Assets/Scenes/Stage7/CutScene_7th2.unity
+    guid: 562d6e213f5e4a94fbc10a00bc9324f0
+  - enabled: 1
+    path: Assets/Scenes/Stage7/CutScene_7th3.unity
+    guid: 14514b865a395784b87366d8a8999dba
+  - enabled: 1
+    path: Assets/Scenes/Stage7/Laste's room 1.unity
+    guid: 29af912010ec6ad4cabc613bb61fda5d
+  - enabled: 1
+    path: Assets/Scenes/Stage6/Laste's room2.unity
+    guid: cfbb6737f74190e4db1c5deb5e89486c
+  - enabled: 1
+    path: Assets/Scenes/Stage7/202-1 1.unity
+    guid: 1c14f3c69ce58a545b9d49292c7e0031
+  - enabled: 1
+    path: Assets/Scenes/Stage7/Map 1F 1.unity
+    guid: 394fa3c4117a0aa47beecfe8674fc591
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 94662839d85637840be5974f1ddf2aeb, type: 2}

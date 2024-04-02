@@ -895,7 +895,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 544157222}
-  - component: {fileID: 544157223}
   - component: {fileID: 544157224}
   m_Layer: 0
   m_Name: Mouse
@@ -919,22 +918,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &544157223
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 544157220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02401e6a814ee2a4e803935e900e6c1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  touchedObjectsImages: []
-  displayImage: {fileID: 634898502}
-  subMenu: {fileID: 1732585742}
-  player: {fileID: 6995630951213824682}
 --- !u!114 &544157224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4696,6 +4679,7 @@ GameObject:
   - component: {fileID: 1732585743}
   - component: {fileID: 1732585745}
   - component: {fileID: 1732585744}
+  - component: {fileID: 1732585746}
   m_Layer: 5
   m_Name: Inventory(kai)
   m_TagString: Untagged
@@ -4761,6 +4745,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1732585742}
   m_CullTransparentMesh: 1
+--- !u!114 &1732585746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732585742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02401e6a814ee2a4e803935e900e6c1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  touchedObjectsImages: []
+  displayImage: {fileID: 634898502}
+  subMenu: {fileID: 1732585742}
 --- !u!1 &1862854244
 GameObject:
   m_ObjectHideFlags: 0
