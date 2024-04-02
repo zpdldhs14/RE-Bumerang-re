@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class AnimationEnd : MonoBehaviour
 {
     public static int isVisited = 0;
+    public int slotNumber = 0;
     public alphazero1 alpha;
 
     void Start()
@@ -16,8 +17,13 @@ public class AnimationEnd : MonoBehaviour
     void LoadScene()
     {
         isVisited++;
+        slotNumber++;
 
-        SaveManager.Instance.SaveGameProgress(isVisited); // 게임 진행도 저장
+        SaveManager saveManager = new SaveManager();
+
+
+
+        saveManager.SaveGameProgress(slotNumber, isVisited); // 게임 진행도 저장
         
         switch(isVisited)
         {
