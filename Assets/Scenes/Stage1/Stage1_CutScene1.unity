@@ -969,6 +969,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   alpha: {fileID: 879804957}
+  saveManager: {fileID: 0}
 --- !u!114 &879804957
 MonoBehaviour:
   m_ObjectHideFlags: 0

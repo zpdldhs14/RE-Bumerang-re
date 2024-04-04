@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
@@ -13,8 +14,18 @@ public class Bilicome : MonoBehaviour
     public TMP_Text text; // 대화 내용을 표시할 Text 컴포넌트
     public string SceneName; // 이동할 씬의 이름
 
+    public CameraShake cameraShake; //CameraShake 스크립트에 접근하기 위한 변수
     void Start()
     {
+        cameraShake = Camera.main.GetComponent<CameraShake>();
+        if (cameraShake == null)
+        {
+            Debug.LogError("CameraShake 컴포넌트를 찾을 수 없습니다.");
+        }
+        else
+        {
+            cameraShake.cameraTransform = player;
+        }
         text.text = "빌리가 문앞으로 오라고 손짓을 한다";
     }
 
@@ -49,28 +60,10 @@ public class Bilicome : MonoBehaviour
         GlitchWhenNear glitchEffect = GetComponent<GlitchWhenNear>(); // GlitchWhenNear 컴포넌트를 가져옴
         if (glitchEffect != null)
         {
-            glitchEffect.Intensity = true; // 글리치 효과를 적용
+            
         }
         SceneManager.LoadScene(SceneName); // Scene2 씬으로 전환
     }
 
-    IEnumerator CameraShake(float duration, float magnitude)
-    {
-        Vector3 originalPos = Camera.main.transform.localPosition;
-        float elapsed = 0.0f;
 
-        while (elapsed < duration)
-        {
-            float x = Random.Range(-1f, 1f) * magnitude;
-            float y = Random.Range(-1f, 1f) * magnitude;
-
-            Camera.main.transform.localPosition = new Vector3(x, y, originalPos.z);
-
-            elapsed += Time.deltaTime;
-
-            yield return null;
-        }
-
-        Camera.main.transform.localPosition = originalPos;
-    }
 }
