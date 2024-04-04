@@ -11,7 +11,7 @@ public class StorageStart : typingeffect
     void Start()
     {
         StartCoroutine(_typing());
+        
     }
 
-    
 }

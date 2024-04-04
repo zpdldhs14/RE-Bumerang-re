@@ -1299,7 +1299,6 @@ GameObject:
   m_Component:
   - component: {fileID: 526296798}
   - component: {fileID: 526296797}
-  - component: {fileID: 526296796}
   - component: {fileID: 526296799}
   m_Layer: 0
   m_Name: "\uD30C\uB7AD"
@@ -1308,21 +1307,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &526296796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 526296795}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cda7cb2f973e8940a9fccb149d994c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  display: {fileID: 0}
-  sprite: {fileID: 21300000, guid: 43c140629fed0034696ad5e65ca6c67c, type: 3}
-  ShowFrame: {fileID: 1475645326}
 --- !u!61 &526296797
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1580,7 +1564,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   black: {fileID: 1288313302}
   duration: 2
-  sceneName: Map 1F
+  sceneName: lab 1
 --- !u!1 &544157220
 GameObject:
   m_ObjectHideFlags: 0
@@ -2708,7 +2692,6 @@ GameObject:
   m_Component:
   - component: {fileID: 953510292}
   - component: {fileID: 953510291}
-  - component: {fileID: 953510290}
   - component: {fileID: 953510289}
   m_Layer: 0
   m_Name: "\uB178\uB791"
@@ -2769,21 +2752,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &953510290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 953510288}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cda7cb2f973e8940a9fccb149d994c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  display: {fileID: 0}
-  sprite: {fileID: 21300000, guid: aba65d38d55076845863f2f345983899, type: 3}
-  ShowFrame: {fileID: 451306318}
 --- !u!61 &953510291
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5070,7 +5038,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1928059575}
   - component: {fileID: 1928059574}
-  - component: {fileID: 1928059573}
   - component: {fileID: 1928059572}
   m_Layer: 0
   m_Name: "\uBE68\uAC31"
@@ -5131,21 +5098,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1928059573
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1928059571}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cda7cb2f973e8940a9fccb149d994c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  display: {fileID: 0}
-  sprite: {fileID: 21300000, guid: 279f8a97b9084c347b763858c54c864b, type: 3}
-  ShowFrame: {fileID: 1883534723}
 --- !u!61 &1928059574
 BoxCollider2D:
   m_ObjectHideFlags: 0

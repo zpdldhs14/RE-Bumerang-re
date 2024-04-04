@@ -14,6 +14,7 @@ public class doortag : MonoBehaviour
    {
        if (other.CompareTag("Player"))
        {
+            black.SetActive(true);
            UIManager.Instance.FadeAlphaOne(black, duration);
             StartCoroutine(ChangeSceneWithDelay());
         }

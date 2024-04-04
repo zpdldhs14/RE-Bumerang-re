@@ -253,7 +253,7 @@ MonoBehaviour:
   m_CaretWidth: 1
   m_ReadOnly: 0
   m_RichText: 1
-  m_GlobalFontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_GlobalFontAsset: {fileID: 11400000, guid: d77c15460f004334fb88500a29f7adc9, type: 2}
   m_OnFocusSelectAll: 1
   m_ResetOnDeActivation: 1
   m_RestoreOriginalTextOnEscape: 1
@@ -1061,6 +1061,7 @@ GameObject:
   - component: {fileID: 527444827}
   - component: {fileID: 527444829}
   - component: {fileID: 527444830}
+  - component: {fileID: 527444831}
   m_Layer: 0
   m_Name: "\uBB38"
   m_TagString: Untagged
@@ -1180,54 +1181,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.6728525, y: 11.898019}
   m_EdgeRadius: 0
---- !u!1 &544157220
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 544157222}
-  - component: {fileID: 544157223}
-  m_Layer: 0
-  m_Name: Mouse
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &544157222
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 544157220}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8, y: -10.1, z: 0}
-  m_LocalScale: {x: 69.07649, y: 4.735676, z: 25.637}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &544157223
+--- !u!114 &527444831
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 544157220}
+  m_GameObject: {fileID: 527444826}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc875472b3e3efc48a31203ed56f7bf9, type: 3}
+  m_Script: {fileID: 11500000, guid: 00ad6e820ce11144ea73dedde1898b0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorOnObject: {fileID: 2800000, guid: 204a3398b1d1285488d95fdfb03d8230, type: 3}
-  cursorDefault: {fileID: 2800000, guid: cc58c654766f9824284b61bf21cd5409, type: 3}
-  cursorStop: {fileID: 2800000, guid: 1f7988d0d1a9fb349aabf51fed9a963a, type: 3}
-  cursorRead: {fileID: 2800000, guid: 8e7d66c247db446468ec0ae676a8ff67, type: 3}
+  black: {fileID: 1288313302}
+  duration: 2
+  sceneName: ShowerRoom
 --- !u!1 &722745431
 GameObject:
   m_ObjectHideFlags: 0
@@ -1494,8 +1462,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u200B"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 66284fb3513d9fd4781ae9c248157fe8, type: 2}
-  m_sharedMaterial: {fileID: 1386315921452877809, guid: 66284fb3513d9fd4781ae9c248157fe8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d77c15460f004334fb88500a29f7adc9, type: 2}
+  m_sharedMaterial: {fileID: 882464489247130710, guid: d77c15460f004334fb88500a29f7adc9, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1989,6 +1957,54 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1051070697
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1051070699}
+  - component: {fileID: 1051070698}
+  m_Layer: 0
+  m_Name: Mouse
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1051070698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051070697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc875472b3e3efc48a31203ed56f7bf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorOnObject: {fileID: 2800000, guid: 204a3398b1d1285488d95fdfb03d8230, type: 3}
+  cursorDefault: {fileID: 2800000, guid: cc58c654766f9824284b61bf21cd5409, type: 3}
+  cursorStop: {fileID: 2800000, guid: 1f7988d0d1a9fb349aabf51fed9a963a, type: 3}
+  cursorRead: {fileID: 2800000, guid: 8e7d66c247db446468ec0ae676a8ff67, type: 3}
+--- !u!4 &1051070699
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051070697}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.07213646, y: 1.387198, z: -1.9096836}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1114500359
 GameObject:
   m_ObjectHideFlags: 0
@@ -2323,7 +2339,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\uC0E4\uC6CC\uC2DC\uAC04\uC5D0 \uC5F4\uC1E0\uB97C \uD6D4\uCCD0\uC57C\uACA0\uB2E4.."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 66284fb3513d9fd4781ae9c248157fe8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d77c15460f004334fb88500a29f7adc9, type: 2}
   m_sharedMaterial: {fileID: 1386315921452877809, guid: 66284fb3513d9fd4781ae9c248157fe8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2387,7 +2403,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -316.5032, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1239072479
@@ -2416,7 +2432,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1288313303
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2567,8 +2583,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Enter text...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d77c15460f004334fb88500a29f7adc9, type: 2}
+  m_sharedMaterial: {fileID: 882464489247130710, guid: d77c15460f004334fb88500a29f7adc9, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2760,6 +2776,7 @@ MonoBehaviour:
   yourText: {fileID: 1239072478}
   delay: 2
   black: {fileID: 1288313302}
+  trigger: {fileID: 1470095306}
   SceneName: 2nd_night
   m_text: "\uC0E4\uC6CC\uC2DC\uAC04\uC5D0 \uC5F4\uC1E0\uB97C \uD6D4\uCCD0\uC57C\uACA0\uB2E4..."
 --- !u!4 &1470095308
@@ -2881,7 +2898,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: 938cc32d2ff6e4548a8d45ae4ff9a07f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 08bdd3bb1f86bc34f95bf82a7da8949f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2901,7 +2918,7 @@ Transform:
   m_GameObject: {fileID: 1502117625}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -35.92488, y: 6.4, z: 0}
+  m_LocalPosition: {x: -35.92488, y: 6.69, z: 0}
   m_LocalScale: {x: 0.39307, y: 0.39307, z: 0.39307}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2943,7 +2960,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.92, y: 6.27}
+    oldSize: {x: 8.08, y: 7.86}
     newSize: {x: 5.92, y: 6.27}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -3779,9 +3796,9 @@ SceneRoots:
   - {fileID: 1163440539}
   - {fileID: 1114500362}
   - {fileID: 742975554}
-  - {fileID: 544157222}
   - {fileID: 722745434}
   - {fileID: 1502117627}
   - {fileID: 31870849}
   - {fileID: 1470095308}
+  - {fileID: 1051070699}
   - {fileID: 2111992403}

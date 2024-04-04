@@ -886,7 +886,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u200B"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 66284fb3513d9fd4781ae9c248157fe8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d77c15460f004334fb88500a29f7adc9, type: 2}
   m_sharedMaterial: {fileID: 1386315921452877809, guid: 66284fb3513d9fd4781ae9c248157fe8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -950,7 +950,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &143278572
@@ -1453,8 +1453,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u200B"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 66284fb3513d9fd4781ae9c248157fe8, type: 2}
-  m_sharedMaterial: {fileID: 1386315921452877809, guid: 66284fb3513d9fd4781ae9c248157fe8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d77c15460f004334fb88500a29f7adc9, type: 2}
+  m_sharedMaterial: {fileID: 882464489247130710, guid: d77c15460f004334fb88500a29f7adc9, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1673,7 +1673,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   black: {fileID: 1288313302}
   duration: 2
-  sceneName: Map 2F
+  sceneName: 205
 --- !u!1 &544157220
 GameObject:
   m_ObjectHideFlags: 0
@@ -1684,7 +1684,6 @@ GameObject:
   m_Component:
   - component: {fileID: 544157222}
   - component: {fileID: 544157223}
-  - component: {fileID: 544157224}
   m_Layer: 0
   m_Name: Mouse
   m_TagString: Untagged
@@ -1723,21 +1722,6 @@ MonoBehaviour:
   cursorDefault: {fileID: 2800000, guid: cc58c654766f9824284b61bf21cd5409, type: 3}
   cursorStop: {fileID: 2800000, guid: 1f7988d0d1a9fb349aabf51fed9a963a, type: 3}
   cursorRead: {fileID: 2800000, guid: 8e7d66c247db446468ec0ae676a8ff67, type: 3}
---- !u!114 &544157224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 544157220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02401e6a814ee2a4e803935e900e6c1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  touchedObjectsImages: []
-  displayImage: {fileID: 88087543}
-  subMenu: {fileID: 507816281}
 --- !u!1 &653192514
 GameObject:
   m_ObjectHideFlags: 0
@@ -3020,7 +3004,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1288313303
 RectTransform:
   m_ObjectHideFlags: 0

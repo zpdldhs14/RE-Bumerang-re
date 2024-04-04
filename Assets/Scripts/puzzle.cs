@@ -23,6 +23,8 @@ public class Puzzle : MonoBehaviour
 
 
     public TMP_Text text;
+    public Collider2D door;
+    public GameObject gimic;
 
     private int redLineState = 1; // 0: 끊어짐, 1: 연결됨
     private int blueLineState = 1;
@@ -55,6 +57,8 @@ public class Puzzle : MonoBehaviour
             // 노란색 선만 끊어진 경우
             backgroundImage.sprite = yellowLineCut;
             text.text = "잠금이 해제되었습니다.";
+            gimic.SetActive(false);
+            door.enabled = true;
         }
         else if (redLineState == 0 && blueLineState == 0 && yellowLineState != 0)
         {
@@ -70,7 +74,7 @@ public class Puzzle : MonoBehaviour
         {
             // 파란색과 노란색 선만 끊어진 경우
             backgroundImage.sprite = blueAndYellowCut;
-            text.text = "비상 잠금이 해제되었습니다.";
+            text.text = "비상 잠금이 작동되었습니다.";
         }
         else if (redLineState == 0 && blueLineState == 0 && yellowLineState == 0)
         {

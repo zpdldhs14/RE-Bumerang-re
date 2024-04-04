@@ -9,6 +9,9 @@ public class TalktoLaste : MonoBehaviour
     public GameObject dialogObject; // 활성화할 대화 오브젝트
     public TMP_Text dialogText; // 대화 텍스트
 
+    public GameObject rasteImage; // 라스테 이미지
+    public GameObject rafImage; // 라프 이미지
+
     // 플레이어와의 충돌을 감지
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -36,11 +39,22 @@ public class TalktoLaste : MonoBehaviour
 
         foreach (var dialogue in dialogues)
         {
+            if (dialogue.StartsWith("라스테"))
+            {
+                rasteImage.SetActive(true);
+                rafImage.SetActive(false);
+            }
+            else if (dialogue.StartsWith("라프"))
+            {
+                rasteImage.SetActive(false);
+                rafImage.SetActive(true);
+            }
             ShowText(dialogue);
             yield return new WaitForSeconds(3f);
         }
-
+        rafImage.SetActive(false);
         dialogObject.SetActive(false);
+        
     }
 
     public void ShowText(string text)

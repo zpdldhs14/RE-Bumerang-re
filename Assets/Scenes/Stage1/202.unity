@@ -885,7 +885,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   black: {fileID: 1288313302}
   duration: 2
-  sceneName: Map 2F
+  sceneName: 201
 --- !u!1 &544157220
 GameObject:
   m_ObjectHideFlags: 0
@@ -1704,7 +1704,6 @@ GameObject:
   m_Component:
   - component: {fileID: 809258739}
   - component: {fileID: 809258741}
-  - component: {fileID: 809258742}
   - component: {fileID: 809258743}
   m_Layer: 0
   m_Name: "\uCC45\uC0C1\uC704\uD3B8\uC9C0"
@@ -1781,18 +1780,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &809258742
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 809258738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cbf196cfa531e746b40ad5ecf371c2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &809258743
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3045,7 +3032,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1134895482}
   - component: {fileID: 1134895484}
-  - component: {fileID: 1134895485}
   - component: {fileID: 1134895486}
   - component: {fileID: 1134895487}
   m_Layer: 0
@@ -3123,18 +3109,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1134895485
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1134895481}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cbf196cfa531e746b40ad5ecf371c2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1134895486
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4568,6 +4542,7 @@ MonoBehaviour:
   text3: {fileID: 850275663}
   box: {fileID: 1591889793}
   boxopen: {fileID: 762492991}
+  boxCollider: {fileID: 1134895486}
 --- !u!1 &1604715566
 GameObject:
   m_ObjectHideFlags: 3
@@ -4776,7 +4751,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1862854246
 Transform:
   m_ObjectHideFlags: 0

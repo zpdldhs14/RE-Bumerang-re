@@ -14,11 +14,12 @@ public class Count : MonoBehaviour
     public Text text3; // 세 번째 텍스트
     public GameObject box;
     public GameObject boxopen;
+    public Collider2D boxCollider; // 가방 오브젝트의 콜라이더
+
 
     private int currentNumber1 = 0; // 첫 번째 텍스트의 현재 숫자
     private int currentNumber2 = 0; // 두 번째 텍스트의 현재 숫자
     private int currentNumber3 = 0; // 세 번째 텍스트의 현재 숫자
-
     private string puzzleKey = "921"; // 퍼즐의 고유한 키
 
     private Dictionary<string, bool> puzzleCompletionStatus; // 퍼즐 완료 상태 딕셔너리
@@ -32,6 +33,28 @@ public class Count : MonoBehaviour
         button1.onClick.AddListener(() => ChangeNumber(text1, ref currentNumber1));
         button2.onClick.AddListener(() => ChangeNumber(text2, ref currentNumber2));
         button3.onClick.AddListener(() => ChangeNumber(text3, ref currentNumber3));
+        
+        if (PlayerPrefs.GetInt("BoxColliderEnabled", 1) == 0)
+        {
+            boxCollider.enabled = false;
+        }
+    }
+
+    void OnDisable()
+    {
+        // 스크립트가 비활성화될 때 boxCollider의 활성 상태를 PlayerPrefs에 저장합니다.
+        PlayerPrefs.SetInt("BoxColliderEnabled", boxCollider.enabled ? 1 : 0);
+    }
+    
+    void Update()
+    {
+        // 퍼즐이 완료되면 가방 오브젝트의 콜라이더를 비활성화하고 상태를 저장합니다.
+        if (text1.text + text2.text + text3.text == puzzleKey)
+        {
+            boxCollider.enabled = false;
+            PlayerPrefs.SetInt("BoxColliderEnabled", 0);
+            Debug.Log("퍼즐 완료");
+        }
     }
 
     void ChangeNumber(Text text, ref int currentNumber)

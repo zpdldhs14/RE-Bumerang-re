@@ -12,16 +12,16 @@ public class SpriteChange : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
             image.sprite = newSprite;
             puzzle.SetActive(true);
         }
     }
-    
+
     public void OnTriggerExit2D(Collider2D other)
     {
-        if(other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
             image.sprite = originalSprite;
             puzzle.SetActive(false);
