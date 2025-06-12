@@ -8,7 +8,7 @@ public class ScaleOne : MonoBehaviour
 
     void Start()
     {
-        UIManager.Instance.ScaleOne(this.gameObject, duration);
+        UiManager.Instance.ScaleOne(this.gameObject, duration);
     }
 
 }

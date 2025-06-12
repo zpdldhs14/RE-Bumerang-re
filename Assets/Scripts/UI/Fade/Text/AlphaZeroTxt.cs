@@ -8,6 +8,6 @@ public class AlphaZeroTxt : MonoBehaviour
 
     void Start()
     {
-        UIManager.Instance.AlphaZeroTxt(this.gameObject, duration);
+        UiManager.Instance.AlphaZeroTxt(this.gameObject, duration);
     }
 }

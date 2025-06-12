@@ -8,7 +8,7 @@ public class ScaleZero : MonoBehaviour
     
     void Start()
     {
-        UIManager.Instance.ScaleZero(this.gameObject, duration);
+        UiManager.Instance.ScaleZero(this.gameObject, duration);
     }
 
     

@@ -47,7 +47,7 @@ public class Scriptout : MonoBehaviour
     IEnumerator Sequnence()
     {
         black.SetActive(true);
-        UIManager.Instance.FadeAlphaOne(black, delay);
+        UiManager.Instance.FadeAlphaOne(black, delay);
         yield return new WaitForSeconds(3.0f);
         SceneManager.LoadScene(SceneName);
     }

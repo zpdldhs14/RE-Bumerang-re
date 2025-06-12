@@ -46,7 +46,7 @@ public class InputText : MonoBehaviour
     public void Goto205()
     {
         button2.gameObject.SetActive(false);
-        UIManager.Instance.FadeAlphaOne(black, 5.0f);
+        UiManager.Instance.FadeAlphaOne(black, 5.0f);
         SceneManager.LoadScene(4);
         
     }

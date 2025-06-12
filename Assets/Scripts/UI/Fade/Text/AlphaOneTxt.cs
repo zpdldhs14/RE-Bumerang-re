@@ -8,7 +8,7 @@ public class AlphaOneTxt : MonoBehaviour
 
     private void Start()
     {
-        UIManager.Instance.AlphaOneTxt(go: this.gameObject, duration);
+        UiManager.Instance.AlphaOneTxt(go: this.gameObject, duration);
     }
     
     

@@ -8,7 +8,7 @@ public class AlphaOne : MonoBehaviour
 
     private void Start()
     {
-        UIManager.Instance.FadeAlphaOne(go: this.gameObject, duration);
+        UiManager.Instance.FadeAlphaOne(go: this.gameObject, duration);
     }
     
     

@@ -8,6 +8,6 @@ public class alphazero1 : MonoBehaviour
 
    public void Fadeone()
     {
-        UIManager.Instance.FadeAlphaOne(go: this.gameObject, duration);
+        UiManager.Instance.FadeAlphaOne(go: this.gameObject, duration);
     }
 }

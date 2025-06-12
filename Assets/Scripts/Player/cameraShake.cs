@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class CameraShake : MonoBehaviour
+public class cameraShake : MonoBehaviour
 {
     public Transform cameraTransform; // 카메라의 위치를 저장하기 위한 변수
     public float shakeAmount = 0.1f; // 흔들림의 강도

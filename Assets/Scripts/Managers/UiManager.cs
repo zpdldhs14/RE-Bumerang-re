@@ -6,9 +6,9 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class UIManager : MonoBehaviour
+public class UiManager : MonoBehaviour
 {
-    public static UIManager Instance;
+    public static UiManager Instance;
 
     private void Awake()
     {

@@ -26,7 +26,7 @@ public class MoveToRoom : MonoBehaviour
         {
             isVisited = true;
             black.SetActive(true);
-            UIManager.Instance.FadeAlphaOne(black, duration);
+            UiManager.Instance.FadeAlphaOne(black, duration);
             StartCoroutine(ChangeSceneWithDelay());
         }
     }

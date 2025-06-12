@@ -8,6 +8,6 @@ public class FadeWhite : MonoBehaviour
 
     void Start()
     {
-        UIManager.Instance.FadeWhite(this.gameObject, duration);
+        UiManager.Instance.FadeWhite(this.gameObject, duration);
     }
 }

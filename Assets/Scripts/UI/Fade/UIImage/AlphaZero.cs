@@ -9,7 +9,7 @@ public class AlphaZero : MonoBehaviour
 
     void Start()
     {
-        UIManager.Instance.FadeAlphaZero(this.gameObject, duration);
+        UiManager.Instance.FadeAlphaZero(this.gameObject, duration);
     }
 
     void Update()
