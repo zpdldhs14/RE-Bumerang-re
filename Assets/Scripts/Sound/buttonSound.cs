@@ -14,7 +14,7 @@ public class buttonSound : MonoBehaviour
         yourButton.onClick.AddListener(PlayAnimationAndSound);
     }
 
-    void PlayAnimationAndSound()
+    public void PlayAnimationAndSound()
     {
         // 애니메이션을 재생합니다.
         anim.Play("button", -1, 0f);

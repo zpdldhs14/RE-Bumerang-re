@@ -902,7 +902,6 @@ GameObject:
   - component: {fileID: 791866998}
   - component: {fileID: 791866997}
   - component: {fileID: 791867000}
-  - component: {fileID: 791867002}
   - component: {fileID: 791867003}
   - component: {fileID: 791867004}
   m_Layer: 0
@@ -1031,18 +1030,6 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
---- !u!114 &791867002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 791866996}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a0fcaf2d94aeca46936ec7064d9f7d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &791867003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1414,7 +1401,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   black: {fileID: 1288313302}
   duration: 2
-  sceneName: Map 2F
+  sceneName: Map 1F
 --- !u!61 &1137913732
 BoxCollider2D:
   m_ObjectHideFlags: 0

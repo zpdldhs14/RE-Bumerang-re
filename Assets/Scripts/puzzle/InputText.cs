@@ -35,6 +35,7 @@ public class InputText : MonoBehaviour
         sound.Play();
         vent.SetActive(false);
         Letter.SetActive(true);
+        GameManager.Instance.Complete205Puzzle();
     }
     public void LetterClicked()
     {
@@ -46,10 +47,10 @@ public class InputText : MonoBehaviour
     public void Goto205()
     {
         button2.gameObject.SetActive(false);
-        UiManager.Instance.FadeAlphaOne(black, 5.0f);
-        SceneManager.LoadScene(4);
-        
+        GameManager.Instance.Complete201Puzzle();
+        UiManager.Instance.FadeAndLoadScene(black, 3.0f, 4);
     }
+
    public void OnClick()
    {
         if (inputField.text == answer)

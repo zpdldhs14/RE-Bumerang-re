@@ -1078,7 +1078,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   black: {fileID: 1288313302}
   duration: 2
-  sceneName: 
+  sceneName: Map 1F
 --- !u!1 &544157220
 GameObject:
   m_ObjectHideFlags: 0

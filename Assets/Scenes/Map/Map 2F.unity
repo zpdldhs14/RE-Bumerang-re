@@ -2500,6 +2500,78 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 843138190}
   m_CullTransparentMesh: 1
+--- !u!1 &984458039
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 984458041}
+  - component: {fileID: 984458042}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &984458041
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984458039}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -20.993538, y: 17.489092, z: -0.5351742}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &984458042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984458039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89c1c5b4a378136469f37f8d38380e31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondFloorRooms:
+  - roomId: 201
+    roomObject: {fileID: 1174709807}
+    isUnlocked: 0
+    requiredItem: 
+  - roomId: 205
+    roomObject: {fileID: 1221536013}
+    isUnlocked: 1
+    requiredItem: 
+  thirdFloorRooms: []
+  fourthFloorRooms: []
+  allRoomIcons:
+  - roomId: 201
+    roomIconObject: {fileID: 1174709807}
+  - roomId: 205
+    roomIconObject: {fileID: 1221536013}
+  - roomId: ShowerRoom
+    roomIconObject: {fileID: 2004112323}
+  - roomId: Toliet
+    roomIconObject: {fileID: 610217714}
+  - roomId: 203
+    roomIconObject: {fileID: 58168458}
+  - roomId: 204
+    roomIconObject: {fileID: 602832669}
+  - roomId: storage
+    roomIconObject: {fileID: 1690290903}
+  gratingObject: {fileID: 1230090140}
+  warehouseTextButton: {fileID: 1690290907}
 --- !u!1 &1004573056
 GameObject:
   m_ObjectHideFlags: 0
@@ -3301,7 +3373,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1230090141
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3311,14 +3383,14 @@ RectTransform:
   m_GameObject: {fileID: 1230090140}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 0.9902736, z: 1}
+  m_LocalScale: {x: 0.11594082, y: 5.578508, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1909987855}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 63, y: 13}
+  m_AnchoredPosition: {x: 61, y: 13}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1230090142
@@ -4531,7 +4603,7 @@ GameObject:
   - component: {fileID: 2004112328}
   - component: {fileID: 2004112329}
   m_Layer: 5
-  m_Name: "\uC0E4\uC6CC\uC2E4"
+  m_Name: ShowerRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4689,3 +4761,4 @@ SceneRoots:
   - {fileID: 1654113646}
   - {fileID: 62951944}
   - {fileID: 1583592971}
+  - {fileID: 984458041}

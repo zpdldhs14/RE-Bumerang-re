@@ -1673,7 +1673,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   black: {fileID: 1288313302}
   duration: 2
-  sceneName: 205
+  sceneName: Map 2F
+  currentRoomId: 
+  targetRoomId: 
+  requiredItem: 
+  messageOnLocked: 
 --- !u!1 &544157220
 GameObject:
   m_ObjectHideFlags: 0
@@ -2135,7 +2139,6 @@ GameObject:
   - component: {fileID: 791866998}
   - component: {fileID: 791866997}
   - component: {fileID: 791867000}
-  - component: {fileID: 791867002}
   - component: {fileID: 791867004}
   - component: {fileID: 791867005}
   m_Layer: 0
@@ -2264,18 +2267,6 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
---- !u!114 &791867002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 791866996}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a0fcaf2d94aeca46936ec7064d9f7d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &791867004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3036,7 +3027,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1288313303
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3069,7 +3060,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3868,6 +3859,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1589417357}
   - component: {fileID: 1589417358}
+  - component: {fileID: 1589417359}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -3905,6 +3897,21 @@ MonoBehaviour:
   buttonObj: {fileID: 25310099}
   imageObj: {fileID: 1901388853}
   letter: {fileID: 108470075}
+--- !u!114 &1589417359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589417356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 092d104aac0d75046a1e706b22959e1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  messagePanel: {fileID: 0}
+  messageText: {fileID: 0}
+  messageDisplayTime: 3
 --- !u!1 &1604715566
 GameObject:
   m_ObjectHideFlags: 3
@@ -4226,7 +4233,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27a0e9352c164f75b77e24233687f488, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiObject: {fileID: 25310099}
 --- !u!114 &1883762970
 MonoBehaviour:
   m_ObjectHideFlags: 0

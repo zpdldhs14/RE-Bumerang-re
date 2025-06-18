@@ -8,7 +8,7 @@ public class Item : MonoBehaviour, IPointerDownHandler
 {
     [Header("# Item Info")]
     public ItemType type;
-    public enum ItemType { Key, Cat, Letter, None}
+    public enum ItemType { Key, Cat, Letter, Soap, None}
     [SerializeField] bool usable;
 
     
